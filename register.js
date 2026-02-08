@@ -94,3 +94,27 @@ form.addEventListener("submit", function (e) {
 
   form.reset();
 });
+phone.addEventListener("input", function () {
+  var digits = "";
+
+  for (var i = 0; i < phone.value.length; i++) {
+    var ch = phone.value[i];
+    if (ch >= "0" && ch <= "9") {
+      digits += ch;
+    }
+  }
+
+  if (digits.indexOf("254") === 0) {
+    digits = digits.substring(3);
+  }
+
+  digits = digits.substring(0, 9);
+
+  var formatted = "+254 ";
+
+  if (digits.length > 0) formatted += digits.substring(0, 3);
+  if (digits.length > 3) formatted += "-" + digits.substring(3, 6);
+  if (digits.length > 6) formatted += "-" + digits.substring(6, 9);
+
+  phone.value = formatted;
+});
