@@ -36,6 +36,7 @@
             id="fullName"
             placeholder="e.g. Tosh M."
             required
+            minlength="2"
           />
 
           <label for="email">Email:</label>
@@ -47,7 +48,12 @@
           />
 
           <label for="phone">Phone (optional)</label>
-          <input type="tel" id="phone" placeholder="e.g. 07xx xxx xxx" />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+254 7xx-xxx-xxx"
+            pattern="^\+254 [0-9]{3}-[0-9]{3}-[0-9]{3}$"
+          />
 
           <label for="password">Password:</label>
           <input
@@ -55,10 +61,11 @@
             id="password"
             placeholder="Minimum 8 characters"
             required
+            minlength="8"
           />
 
           <label for="confirmPassword">Confirm Password *</label>
-          <input type="password" id="confirmPassword" required />
+          <input type="password" id="confirmPassword" required minlength="8" />
 
           <div class="checkbox-line">
             <input type="checkbox" id="agree" required />
