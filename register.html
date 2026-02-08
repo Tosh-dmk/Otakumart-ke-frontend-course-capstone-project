@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OtakuMart KE</title>
+    <link rel="icon" type="img/jpg" href="assets/images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>OTAKUMART KE</h1>
+
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy Notice</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a class="active" href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="page">
+        <h2>Create Account</h2>
+      </section>
+
+      <section class="page">
+        <h2>Registration Form</h2>
+
+        <form id="registerForm" class="register-form">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="e.g. Tosh M."
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. tosh@example.com"
+            required
+          />
+
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" placeholder="e.g. 07xx xxx xxx" />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Minimum 8 characters"
+            required
+          />
+
+          <label for="confirmPassword">Confirm Password *</label>
+          <input type="password" id="confirmPassword" required />
+
+          <div class="checkbox-line">
+            <input type="checkbox" id="agree" required />
+            <label for="agree">
+              I agree to the <a href="privacy.html">Privacy Notice</a> *
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Register</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+
+          <p id="successMsg" class="success"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 OtakuMart KE</p>
+      <p><strong>Telephone Number:</strong> +254 749-517-776</p>
+      <p><strong>Email:</strong> otakumartke@gmail.com</p>
+    </footer>
+
+    <script src="register.js"></script>
+  </body>
+</html>

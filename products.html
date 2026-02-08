@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OtakuMart KE</title>
+    <link rel="icon" type="img/jpg" href="assets/images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>OTAKUMART KE</h1>
+
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy Notice</a></li>
+          <li><a class="active" href="products.html">Shop</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="page">
+        <h2>Shop Anime Merchandise</h2>
+        <p class="subtitle">Search and filter products below.</p>
+      </section>
+
+      <section class="page">
+        <h2>Search & Filter</h2>
+
+        <div class="controls">
+          <div class="control-box">
+            <label for="searchInput">Search</label>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search e.g. Gojo, Naruto, Luffy..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="control-box">
+            <label for="categorySelect">Category</label>
+            <select id="categorySelect">
+              <option value="all">All</option>
+              <option value="Manga">Manga</option>
+              <option value="Apparel">Apparel</option>
+              <option value="Props">Props</option>
+              <option value="Cosplay">Cosplay</option>
+            </select>
+          </div>
+
+          <div class="control-box">
+            <label for="sortSelect">Sort</label>
+            <select id="sortSelect">
+              <option value="default">Default</option>
+              <option value="priceLow">Price: Low → High</option>
+              <option value="priceHigh">Price: High → Low</option>
+              <option value="nameAZ">Name: A → Z</option>
+              <option value="nameZA">Name: Z → A</option>
+            </select>
+          </div>
+
+          <div class="control-box">
+            <button id="clearBtn" class="btn btn-secondary" type="button">
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <p id="resultsText" class="subtitle">Showing 0 products</p>
+      </section>
+
+      <section class="page">
+        <h2>Products</h2>
+
+        <div id="productGrid" class="product-grid">
+          <div class="product-card">
+            <img src="assets/images/CosplayKizaru.webp" alt="Kizaru Cosplay" />
+            <h3>Admiral Kizaru Cosplay Costume</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 7,300</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/HoodieDavy.webp" alt="Davy Hoodie" />
+            <h3>One Piece Mugiwara Strawhat Hoodie</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 3,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/MangaAOT.jpg" alt="AOT Manga" />
+            <h3>Attack On Titan Volume 1</h3>
+            <p class="category">Manga</p>
+            <p class="price">KSh 5,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/PropAceHat.webp" alt="Ace Hat Prop" />
+            <h3>One Piece Ace Cosplay Hat</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/ShirtGojo.webp" alt="Gojo Shirt" />
+            <h3>Gojo Tshirt</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/Sword1.webp" alt="Ichigo Sword" />
+            <h3>Ichigo Kurosaki Tensa Zangetsu Katana</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 24,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="assets/images/CosplayKokushibo.webp"
+              alt="Kokushibo Cosplay"
+            />
+            <h3>Demon Slayer Kokushibo Cosplay Costume</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 5,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/HoodieItachi.webp" alt="Itachi Hoodie" />
+            <h3>Itachi Uchiha Hoodie</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 3,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/MangaDrStone.jpg" alt="Dr Stone Manga" />
+            <h3>Dr Stone Volume 1</h3>
+            <p class="category">Manga</p>
+            <p class="price">KSh 5,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/PropHeadband.webp" alt="Naruto Headband" />
+            <h3>Naruto HeadBand</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 600</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/ShirtJJK.webp" alt="JJK Shirt" />
+            <h3>Team Gojo Tshirt</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/Sword2.webp" alt="Sword 2" />
+            <h3>Dragon Slayer Japanese Damascus Steel Sword</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 34,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/CosplayLuffy.webp" alt="Luffy Cosplay" />
+            <h3>Monkey D Luffy Cosplay Costume</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 5,100</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/HoodieKillua.webp" alt="Killua Hoodie" />
+            <h3>Killua Slurp Hoodie</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 3,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="assets/images/MangaGurrenLaggan.jpg"
+              alt="Gurren Lagann Manga"
+            />
+            <h3>Gurren Laggan Volume 1</h3>
+            <p class="category">Manga</p>
+            <p class="price">KSh 5,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/PropLuffyHat.webp" alt="Luffy Hat Prop" />
+            <h3>One Piece Luffy COSPLAY Straw Hat</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/ShirtLevi.webp" alt="Levi Shirt" />
+            <h3>Levi Stare Classic T-Shirt</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/Sword3.webp" alt="Sword 3" />
+            <h3>Devil May Cry 5 Vergil Yamato Katana</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 28,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/CosplayMinato.webp" alt="Minato Cloak" />
+            <h3>Minato Namikaze Fourth Hokage Cloak</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 3,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/HoodieKurama.webp" alt="Kurama Hoodie" />
+            <h3>Naruto Kurama Seal Hoodie</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 3,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/MangaOrb.jpg" alt="Orb Manga" />
+            <h3>Orb: On The Movements Of The Earth Volume 1</h3>
+            <p class="category">Manga</p>
+            <p class="price">KSh 5,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/PropMask.webp" alt="Obito Mask Prop" />
+            <h3>Naruto Anime Uchiha Obito Cosplay Prop Mask</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 1,700</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/Sword4.webp" alt="Sword 4" />
+            <h3>Jingchuan Damascus Pattern Japanese sword</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 34,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/CosplaySenku.webp" alt="Senku Cosplay" />
+            <h3>Ishigami Senku Cosplay Costume</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 5,100</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/HoodieTanjiro.webp" alt="Tanjiro Hoodie" />
+            <h3>Tanjiro Demon Slayer Hoodie</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 3,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/MangaVinland.jpg" alt="Vinland Manga" />
+            <h3>Vinland Saga Volume 1</h3>
+            <p class="category">Manga</p>
+            <p class="price">KSh 5,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/ShirtNaruto.webp" alt="Naruto Shirt" />
+            <h3>Akatsuki-Themed T-Shirt</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/Sword5.webp" alt="Sword 5" />
+            <h3>Azure Dragon’s Roar – Samurai Katana</h3>
+            <p class="category">Props</p>
+            <p class="price">KSh 26,000</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="assets/images/CosplaySpirited.webp"
+              alt="No-Face Cosplay"
+            />
+            <h3>Spirited Away No-Face Cosplay Costume</h3>
+            <p class="category">Cosplay</p>
+            <p class="price">KSh 4,100</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/ShirtTodroku.webp" alt="Todoroki Shirt" />
+            <h3>Anime Shoto Todoroki Tee</h3>
+            <p class="category">Apparel</p>
+            <p class="price">KSh 1,500</p>
+            <a class="btn small" href="register.html">Buy</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 OtakuMart KE</p>
+      <p><strong>Telephone Number:</strong> +254 749-517-776</p>
+      <p><strong>Email:</strong> otakumartke@gmail.com</p>
+    </footer>
+    <script src="products.js"></script>
+  </body>
+</html>
